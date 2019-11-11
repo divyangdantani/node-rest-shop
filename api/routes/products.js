@@ -53,7 +53,7 @@ router.post("/", (req, res, next) => {
           price: result.price,
           _id: result._id,
           request: {
-            type: "POST",
+            type: "GET",
             url: "http://localhost:3000/products/" + result._id
           }
         }
